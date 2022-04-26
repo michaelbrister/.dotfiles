@@ -120,3 +120,7 @@ eval "`fnm env`"
 # forgit cli
 source ~/.forgit.plugin.zsh
 export FORGIT_COPY_CMD='xclip -selection clipboard'
+
+# Autocomplete for helm and kubectl
+source <(helm completion zsh)
+source <(kubectl completion zsh)
