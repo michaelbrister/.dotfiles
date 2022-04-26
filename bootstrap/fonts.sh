@@ -1,4 +1,4 @@
-#!/bin/env 
+#!/usr/bin/env 
 output_dir=~/Downloads/fonts
 fonts=(Go-Mono UbuntuMono)
 

@@ -72,8 +72,8 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-        dotenv
-        npm
+  dotenv
+  npm
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
@@ -114,3 +114,9 @@ export PATH=$PATH:/usr/local/go/bin
 # fnm
 export PATH=/home/mike/.fnm:$PATH
 eval "`fnm env`"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# forgit cli
+source ~/.forgit.plugin.zsh
+export FORGIT_COPY_CMD='xclip -selection clipboard'

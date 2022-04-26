@@ -1,4 +1,4 @@
-#!/bin/emv bash
+#!/usr/bin/emv bash
 
 # install zsh
 sudo apt install -y zsh

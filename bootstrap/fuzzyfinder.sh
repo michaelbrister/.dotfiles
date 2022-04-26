@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 if [ -d "$HOME/.fzf" ]; then
     # update fzf
