@@ -109,8 +109,9 @@ source $ZSH/oh-my-zsh.sh
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:~/go/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 # fnm
 export PATH=/home/mike/.fnm:$PATH
