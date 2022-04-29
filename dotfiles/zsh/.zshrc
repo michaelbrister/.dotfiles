@@ -110,6 +110,7 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:~/go/bin
 
 # fnm
 export PATH=/home/mike/.fnm:$PATH
