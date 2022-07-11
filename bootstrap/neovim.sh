@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function linux () {
-  wget https://github.com/neovim/neovim/releases/download/v0.7.0/nvim-linux64.deb
+  wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb
   sudo apt install ./nvim-linux64.deb
 }
 
@@ -22,7 +22,7 @@ case "$(uname -s)" in
 
    Linux)
      echo 'Linux'
-     darwin 
+     linux 
      ;;
 
    CYGWIN*|MINGW32*|MSYS*|MINGW*)
