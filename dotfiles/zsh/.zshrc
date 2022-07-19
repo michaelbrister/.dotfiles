@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -109,11 +109,16 @@ source $ZSH/oh-my-zsh.sh
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
+# VPN 
+alias hqvpn='sudo openvpn ~/Documents/OVPN/hq.ovpn'
+alias prodvpn='sudo openvpn ~/Documents/OVPN/prod.ovpn'
+alias buildbpn='sudo openvpn ~/Documents/OVPN/build.ovpn'
+
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-# fnm
+# fast node manager
 export PATH=/home/mike/.fnm:$PATH
 eval "`fnm env`"
 
@@ -126,3 +131,10 @@ export FORGIT_COPY_CMD='xclip -selection clipboard'
 # Autocomplete for helm and kubectl
 source <(helm completion zsh)
 source <(kubectl completion zsh)
+
+# Custom functions
+fpath=(
+    ~/.zfuncs
+    ~/.zfuncs/**/*~*/(CVS)#(/N)
+    "${fpath[@]}"
+)
