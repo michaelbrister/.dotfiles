@@ -112,7 +112,7 @@ alias pbpaste='xclip -selection clipboard -o'
 # VPN 
 alias hqvpn='sudo openvpn ~/Documents/OVPN/hq.ovpn'
 alias prodvpn='sudo openvpn ~/Documents/OVPN/prod.ovpn'
-alias buildbpn='sudo openvpn ~/Documents/OVPN/build.ovpn'
+alias buildvpn='sudo openvpn ~/Documents/OVPN/build.ovpn'
 
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
@@ -138,3 +138,7 @@ fpath=(
     ~/.zfuncs/**/*~*/(CVS)#(/N)
     "${fpath[@]}"
 )
+
+# fnm
+export PATH=/home/mike/.fnm:$PATH
+eval "`fnm env`"
